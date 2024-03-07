@@ -16,7 +16,7 @@ Before diving into the main challenge, let's simplify the problem to build your 
 - 2 (1, 1, 1), (1, 2)
   - Incorrect. Can you think of more ways?
 - 3 (1, 1, 1), (1, 2), (2, 1)
- - Correct. That makes 3 distinct ways to climb a staircase of 3 steps.
+  - Correct. That makes 3 distinct ways to climb a staircase of 3 steps.
 - 4 (1, 1, 1), (1, 2), (2, 1), (3, 1)
   - Incorrect. You can only take 1 or 2 steps
 - 5 (1, 1, 1), (1, 2), (2, 1), (2, 2), (2, 2, 1) 
