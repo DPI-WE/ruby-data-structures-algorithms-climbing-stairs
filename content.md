@@ -28,7 +28,8 @@ This example illustrates the core concept of dynamic programming and the Fibonac
 ## Think Aloud
 In coding interviews, interviewers are interested in your thought process. Discuss your approach to the problem, write pseudocode, and consider both brute force and optimized solutions. Starting with a brute force solution is perfectly acceptable; you can refine your approach as you go.
 
-Test your code
+## Test your code
+
 ```ruby
 steps = [2, 3, 5, 8]
 n = steps.sample
