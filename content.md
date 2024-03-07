@@ -63,7 +63,7 @@ end
 ```ruby
 describe "Climbing Stairs" do
   it "calculates the correct number of ways for a larger number of steps, demonstrating the algorithm's efficiency" do
-    expect(climb_stairs(20)).to be_a(10946)
+    expect(climb_stairs(20)).to eq(10946)
   end
 end
 ```
