@@ -63,8 +63,8 @@ end
 
 ```ruby
 describe "Climbing Stairs" do
-  it "calculates 3 distinct ways for 4 steps" do
-    expect(climb_stairs(4)).to eq(4) # (1,1,1,1), (1,1,2), (1,2,1) and (2,1,1)
+  it "calculates 5 distinct ways for 4 steps" do
+    expect(climb_stairs(4)).to eq(5) # (1,1,1,1), (1,1,2), (1,2,1), (2,1,1) and (2,2)
   end
 end
 ```
@@ -72,7 +72,7 @@ end
 
 ```ruby
 describe "Climbing Stairs" do
-  it "calculates 5 distinct ways for 5 steps" do
+  it "calculates 8 distinct ways for 5 steps" do
     expect(climb_stairs(5)).to eq(8) # (1,1,1,1,1), (1,1,1,2), (1,1,2,1), (1,2,1,1), (2,1,1,1), (2,2,1), (2,1,2) and (1,2,2)
   end
 end
