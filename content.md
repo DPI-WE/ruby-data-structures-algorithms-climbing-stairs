@@ -98,9 +98,10 @@ end
 {: .repl-test #climb_stairs_test_6 for="climb_stairs" title="Climbing Stairs calculates correctly for a larger number of steps" points="1"}
 
 ## Tips and Clues for Solving the Problem
-- **Recursion**: A straightforward way to solve this problem is by using recursion to explore all possible step combinations. However, this method can be highly inefficient for larger numbers of steps due to repeated calculations.
-- **Dynamic Programming**: The problem exhibits both optimal substructure and overlapping subproblems, making it a perfect candidate for dynamic programming. By storing the results of subproblems, you can avoid redundant calculations and improve efficiency.
-- **Fibonacci Sequence**: This problem can be reduced to the Fibonacci sequence, where the number of ways to climb n steps is the sum of the ways to climb (n-1) steps and (n-2) steps. Utilizing this approach significantly simplifies the problem.
+- **Fibonacci Sequence**: This problem can be reduced to the Fibonacci sequence, where the number of ways to climb n steps is the sum of the ways to climb (n-1) steps and (n-2) steps.
+- **Recursion**: A recursive fibonacci approach has a O(2^n) time complexity due to the exponential number of recursive calls, as each call makes two more calls until reaching the base case.
+- **Dynamic Programming**: Break down a big problem into smaller chunks, solving each small piece just once, and saving the solution so you can use it again later without redoing the work. This approach is perfect when you notice you're solving the same problem over and over again within a bigger problem.
+- **Memoization**: Add a `memo` parameter to the method signature to store the number of ways to get to each step after you calculate it once, so you don't have to calculate it again.
 
 ## Quiz
 
