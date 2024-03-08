@@ -40,7 +40,7 @@ end
 
 puts climb_stairs(n)
 ```
-{: .repl #climb_stairs title="Climbing Stairs" readonly_lines="[1,2,3,4,5,6]"}
+{: .repl #climb_stairs title="Climbing Stairs" readonly_lines="[1,2,3]"}
 
 ```ruby
 describe "Climbing Stairs" do
