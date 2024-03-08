@@ -33,6 +33,7 @@ In coding interviews, interviewers are interested in your thought process. Discu
 ```ruby
 steps = [2, 3, 5, 8]
 n = steps.sample
+puts "Calculating number of combinations for #{n} steps"
 # write your program using this method
 def climb_stairs(n)
 
@@ -40,7 +41,7 @@ end
 
 puts climb_stairs(n)
 ```
-{: .repl #climb_stairs title="Climbing Stairs" readonly_lines="[1,2,3]"}
+{: .repl #climb_stairs title="Climbing Stairs" readonly_lines="[1,2,3,4]"}
 
 ```ruby
 describe "Climbing Stairs" do
@@ -54,11 +55,38 @@ end
 ```ruby
 describe "Climbing Stairs" do
   it "calculates 3 distinct ways for 3 steps" do
-    expect(climb_stairs(3)).to eq(3) # (1,1,1), (1,2), and (2,1)
+    expect(climb_stairs(3)).to eq(3) # (1,1,1), (1,2) and (2,1)
   end
 end
 ```
 {: .repl-test #climb_stairs_test_2 for="climb_stairs" title="Climbing Stairs calculates 3 distinct ways for 3 steps" points="1"}
+
+```ruby
+describe "Climbing Stairs" do
+  it "calculates 3 distinct ways for 4 steps" do
+    expect(climb_stairs(4)).to eq(4) # (1,1,1,1), (1,1,2), (1,2,1) and (2,1,1)
+  end
+end
+```
+{: .repl-test #climb_stairs_test_3 for="climb_stairs" title="Climbing Stairs calculates 4 distinct ways for 4 steps" points="1"}
+
+```ruby
+describe "Climbing Stairs" do
+  it "calculates 5 distinct ways for 5 steps" do
+    expect(climb_stairs(5)).to eq(8) # (1,1,1,1,1), (1,1,1,2), (1,1,2,1), (1,2,1,1), (2,1,1,1), (2,2,1), (2,1,2) and (1,2,2)
+  end
+end
+```
+{: .repl-test #climb_stairs_test_4 for="climb_stairs" title="Climbing Stairs calculates 8 distinct ways for 5 steps" points="1"}
+
+```ruby
+describe "Climbing Stairs" do
+  it "calculates 34 distinct ways for 8 steps" do
+    expect(climb_stairs(8)).to eq(34)
+  end
+end
+```
+{: .repl-test #climb_stairs_test_5 for="climb_stairs" title="Climbing Stairs calculates 34 distinct ways for 8 steps" points="1"}
 
 ```ruby
 describe "Climbing Stairs" do
@@ -67,7 +95,7 @@ describe "Climbing Stairs" do
   end
 end
 ```
-{: .repl-test #climb_stairs_test_3 for="climb_stairs" title="Climbing Stairs calculates correctly for a larger number of steps" points="1"}
+{: .repl-test #climb_stairs_test_6 for="climb_stairs" title="Climbing Stairs calculates correctly for a larger number of steps" points="1"}
 
 ## Tips and Clues for Solving the Problem
 - **Recursion**: A straightforward way to solve this problem is by using recursion to explore all possible step combinations. However, this method can be highly inefficient for larger numbers of steps due to repeated calculations.
@@ -96,3 +124,6 @@ end
 
 ## Conclusion
 In this lesson, we've tackled the Climbing Stairs problem, a classic example of dynamic programming and the Fibonacci sequence in action. By understanding and applying the concepts of recursion, memoization, and dynamic programming, we've seen how to approach and solve problems efficiently, setting a solid foundation for tackling similar algorithmic challenges.
+
+## Resources
+- [leetcode](https://leetcode.com/problems/climbing-stairs)
