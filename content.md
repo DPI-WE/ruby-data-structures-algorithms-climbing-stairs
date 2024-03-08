@@ -101,7 +101,7 @@ end
 - **Fibonacci Sequence**: This problem can be reduced to the Fibonacci sequence, where the number of ways to climb n steps is the sum of the ways to climb (n-1) steps and (n-2) steps.
 - **Recursion**: A recursive fibonacci approach has a O(2^n) time complexity due to the exponential number of recursive calls, as each call makes two more calls until reaching the base case.
 - **Dynamic Programming**: Break down a big problem into smaller chunks, solving each small piece just once, and saving the solution so you can use it again later without redoing the work. This approach is perfect when you notice you're solving the same problem over and over again within a bigger problem.
-- **Memoization**: Add a `memo` parameter to the method signature to store the number of ways to get to each step after you calculate it once, so you don't have to calculate it again.
+- **Memoization**: Add a `memo={}` parameter to the method signature to store the number of ways to get to each step after you calculate it (eg {number_of_steps => number_of_combinations}). With this approach you won't have to re-calculate it (achieving a linear time complexity).
 
 ## Quiz
 
