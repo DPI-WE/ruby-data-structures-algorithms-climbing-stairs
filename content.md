@@ -68,7 +68,7 @@ describe "Climbing Stairs" do
   end
 end
 ```
-{: .repl-test #climb_stairs_test_3 for="climb_stairs" title="Climbing Stairs calculates 4 distinct ways for 4 steps" points="1"}
+{: .repl-test #climb_stairs_test_3 for="climb_stairs" title="Climbing Stairs calculates 5 distinct ways for 4 steps" points="1"}
 
 ```ruby
 describe "Climbing Stairs" do
